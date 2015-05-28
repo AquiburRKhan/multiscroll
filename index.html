@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />   
+    <title>multiscroll.js - split multi-scrolling pages plugin</title>
+
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />      
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />       
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="jquery.multiscroll.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.8.3/jquery-ui.js"></script>
+ 
+
+    <script type="text/javascript">
+     $(document).ready(function() {
+            $('#myContainer').multiscroll({
+               
+                anchors: ['first', 'second', 'third','fourth','fifth','sixth'],
+                menu: '#menu',
+                loopBottom: true,
+                loopTop: true
+            });
+            
+        });
+    </script>
+
+    <link rel="shortcut icon" href="tab-logo.png" >
+</head>
+<body>
+
+
+<ul id="menu">
+    <li data-menuanchor="first"><a href="#first">Home</a></li>
+    <li data-menuanchor="second"><a href="#second">About</a></li>
+    <li data-menuanchor="third"><a href="#third">Education</a></li>
+     <li data-menuanchor="fourth"><a href="#fourth">Skills</a></li>
+     <li data-menuanchor="fifth"><a href="#fifth">Attributes</a></li>
+     <li data-menuanchor="sixth"><a href="#sixth">Miscellaneous</a></li>
+</ul>
+
+
+
+<div id="myContainer">
+
+    <div class="ms-left">
+        <div class="ms-section" id="left1">
+           <div class="back1">
+           <h1 id="hi-right">H</h1>
+             <h1 id="head">I am Aquibur</h1>
+             <h1 id="sum-left">I'm a Dhaka based full stack developer who is</h1>
+             <h1 id="sum-left1">websites. Let's start <a  id="scroll"  href="#second">scrolling</a></h1>
+             <hr id="hr1">
+             <a href="https://www.facebook.com/aquibur.khan"><img id="fb" src="images/facebook.jpg"></a>
+             <a href="#second"><img id="d" src="images/down.jpg"></a>
+           </div>
+
+        </div>
+
+        <div class="ms-section" id="left2">
+                 
+                 <div class="about">
+                    <h1>About Me</h1> 
+                    <p>I am a Computer Science student<br> having studied at American International University of Bangladesh since September 2011.<br> I completed both my A-level and <br> O-level from Aga Khan School, graduating in 2011.<br> My expertise lies in dealing with programming languages such as C, C++, C#, PHP, HTML and database expertise in PL/SQL, Oracle-12c.<br> I am also familiar with both bootstrap and github.<br> I am currently searching for a suitable organization that would utilize both my skills and knowledge for its own benefits as well as enriching my own.
+
+                    </p>
+              <a href="#third"><img id="d" src="images/down.jpg"></a>
+                 </div>
+
+        </div>
+
+        <div class="ms-section" id="left3">
+            <div class="education">
+             <h1>American International University of Bangladesh</h1>
+             <h2>Bachelors in Computer Science-May 2015</h2>
+             <h3>CGPA: 3.82</h3>
+                <hr id="hr3">
+            <h1 id="school">Aga Khan School</h1>
+            <h2 id="Alevel">A-Level-June 2011</h2>
+            <p id="level">
+                     2 A [Physics, Mathematics]<br>
+                     1 B [Chemistry]
+            </p>
+            <h2 id="olevel">O-level-June 2009</h2>
+                  <p id="lev">
+                     4 A [Physics, Biology, Chemistry, Accounting]<br>
+                     2 B [Bengali, Mathematics B]<br>
+                     2 C [English, Pure Mathematics]<br>
+
+                  </p>            
+               <a href="#fourth"><img id="d" src="images/down.jpg"></a>
+            </div>
+        </div>
+        <div class="ms-section" id="left4">
+            <div class="skill">
+            <a href="#fifth"><img id="d" src="images/down.jpg"></a>
+            </div>
+
+            
+        </div>
+                <div class="ms-section" id="left5">
+
+            <div class="att">
+            <h1>Personal Attributes</h1>
+            <br>
+           <p>Self-motivated to learn and accomplish goals set by myself or supervisors<br><br>
+           Resourceful with a can-do attitude to solve any problems and challenges faced<br><br>
+           Excellent communication, presentation and personal skills<br><br>
+           Strong commitment to personal and workplace safety developed through coursework<br><br>
+           Fast learner and able to work independently or especially as part of a team </p>
+         <a href="#sixth"><img id="d" src="images/down.jpg"></a>
+            <div>
+                
+
+            </div>
+            </div>
+        </div>
+
+                <div class="ms-section" id="left6">
+                <div class="dis">
+                    
+                </div>
+                <div class="hut">
+                <h1>Extracurricular Activities</h1><br>
+                <p>Table-tennis doubles champion in table tennis tournament in Aga Khan School, Dhaka 2011.<br><br>
+
+                Competed in the Aga Khan Interschool Football Tournament 2010.<br><br>
+
+                Competed in the American International University Bangladesh Champions League 2013, 2014.</p>
+
+                </div>
+                   <a href="#first"><img id="d" src="images/down.jpg"></a>
+            
+        </div>
+  
+    </div>
+    
+    <div class="ms-right">
+        <div class="ms-section" id="right1">
+            <div class="back2">
+            <h1 id="hi-left">I</h1>
+                <h1 id="head1">Rahman Khan</h1>
+                <h1 id="sum-right">looking to create awesome and
+            effective visual</h1>
+             <h1 id="sum-right1">and learn more about me.</h1>
+             <hr id="hr2">
+           </div>
+        </div>
+
+        <div class="ms-section" id="right2">
+            <div class="about">
+                 <h1>Contact Details</h1>
+                 <p>Aquibur Rahman Khan<br><br>
+                    Apt A8, Bailey Ballerina<br><br>
+                    Plot 144, New Bailyroad<br><br>
+                    Ramna, Dhaka<br><br>
+                    Bangladesh<br><br>
+                    ark.aquib17@gmail.com</p>
+              
+
+            </div>
+        </div>
+
+        <div class="ms-section" id="right3">
+            <div class="education1"></div>
+        </div>
+
+        <div class="ms-section" id="right4">
+            <div class="skill1">
+            <div class="ski">
+           <h1>LANGUAGES AND APPLICATION:</h1>
+           <p>C, C++, C#, PHP, Javascript, CSS, HTML, PL/SQL</p>
+           <br>
+           <h1>OPERATING SYSTEM:</h1>
+           <p>Windows 8, 7, XP</p>
+           <br>
+           <h1>DATABASES:</h1>
+           <p>Oracle-12c</p>
+           <br>
+           <h1>MICROSOFT OFFICE:</h1>
+           <p>MS Word, MS Excel, MS PowerPoint</p>
+           </div>
+            </div>
+        </div>    
+
+         <div class="ms-section" id="right5">
+            <div class="att1">
+                
+            </div>
+        </div> 
+        
+        <div class="ms-section" id="right6">
+         <div class="mis">
+        </div>
+                 <div class="mist">
+            <h1 id="lang">Language Skills</h1>
+            <p id="lan"><u>Bengali:</u><br>
+            Fluent in both verbal and written<br><br>
+            <u>English:</u><br>
+            Fluent in both verbal and written<br><br>      
+           </p>
+           </div>
+        </div>
+
+
+</div>
+</div>
+
+</body>
+</html>
